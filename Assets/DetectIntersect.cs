@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class DetectIntersect : MonoBehaviour
 {
-    BoxCollider collider;
-    Cuboid box, otherBox;
+    [SerializeField] Cuboid box;
+    [SerializeField] DynamicCuboid otherBox;
     Vector3[] intersectPoints;
     bool[] vertexIsIntersecting;
-    GameObject[] spheres = new GameObject[16];
+    [SerializeField] bool playerParked;
+    GameObject[] spheres = new GameObject[8];
     // Start is called before the first frame update
     void Start()
     {
-        collider = gameObject.GetComponent<BoxCollider>();
         box = gameObject.GetComponent<Cuboid>();
-        for (int i = 0; i < 16; i++)
+        for (int i = 0; i < 8; i++)
         {
             spheres[i] = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             spheres[i].transform.localScale = 0.1f * Vector3.one;
@@ -25,18 +25,20 @@ public class DetectIntersect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("test");
-        otherBox = other.gameObject.GetComponent<Cuboid>();   
+        if (ParkCheck())
+            Debug.Log("parked");
     }
 
     void OnTriggerStay()
     {
         ExcludeVertices();
+        ParkCheck();
+    }
+
+    void OnTriggerExit()
+    {
+        for(int i = 0; i < spheres.Length; i++)
+            spheres[i].SetActive(false);
     }
 
     void ExcludeVertices()
@@ -50,23 +52,27 @@ public class DetectIntersect : MonoBehaviour
         int count = 0;
         foreach (Vector3 point in intersectPoints)
         {
-            if (IsInBox(point)){
+            if (IsInBox(point))
+            {
                 spheres[count].SetActive(true);
                 spheres[count].transform.position = point;
                 vertexIsIntersecting[count] = true;
+            } else 
+            { 
+                spheres[count].SetActive(false);
             }
-            else { spheres[count].SetActive(false); }
 
             count++;
             
         }
+    }
 
-        count = 8;
-
-        foreach(Cuboid.Face face in box.GetFaces())
-        {
-           
-        }
+    bool ParkCheck()
+    {
+        bool check = true;
+        foreach (GameObject ball in spheres)
+            check = check && ball.activeSelf;
+        return check;
     }
 
     int Mod(int x, int m)
