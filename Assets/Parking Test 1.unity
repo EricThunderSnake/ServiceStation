@@ -1322,23 +1322,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1351860872736671866, guid: 452287e839c0d8f41a705e40fa6b2f35, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99988073
       objectReference: {fileID: 0}
     - target: {fileID: 1351860872736671866, guid: 452287e839c0d8f41a705e40fa6b2f35, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.015445553
       objectReference: {fileID: 0}
     - target: {fileID: 1351860872736671866, guid: 452287e839c0d8f41a705e40fa6b2f35, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1351860872736671866, guid: 452287e839c0d8f41a705e40fa6b2f35, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1351860872736671866, guid: 452287e839c0d8f41a705e40fa6b2f35, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -1.77
       objectReference: {fileID: 0}
     - target: {fileID: 1351860872736671866, guid: 452287e839c0d8f41a705e40fa6b2f35, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1351,10 +1351,6 @@ PrefabInstance:
     - target: {fileID: 6208116721269015528, guid: 452287e839c0d8f41a705e40fa6b2f35, type: 3}
       propertyPath: m_Name
       value: CarCube
-      objectReference: {fileID: 0}
-    - target: {fileID: 7033927943500277667, guid: 452287e839c0d8f41a705e40fa6b2f35, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
