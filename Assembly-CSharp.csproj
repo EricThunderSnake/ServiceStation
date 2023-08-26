@@ -63,6 +63,7 @@
     <Compile Include="Assets\CameraController.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\DetectIntersect.cs" />
+    <Compile Include="Assets\NPC Test\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\DynamicCuboid.cs" />
     <Compile Include="Assets\ParkingManager.cs" />
     <Compile Include="Assets\Cuboid.cs" />
@@ -712,6 +713,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj">
+      <Project>{A802488C-4663-2A85-69C4-FD61B17CC56F}</Project>
+      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
       <Project>{FC2CE28E-21CA-67AF-351C-DB0C0181C41E}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
@@ -723,6 +728,10 @@
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{EC11B00E-B2A7-6F62-1FFF-D1534B23D3FC}</Project>
       <Name>Unity.VisualScripting.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.csproj">
+      <Project>{A4FB3341-0C3C-AB61-03E7-08D99B1DD5AA}</Project>
+      <Name>Unity.AI.Navigation</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
       <Project>{47D9260D-18AE-4711-8365-918681DA22AA}</Project>
@@ -736,6 +745,10 @@
       <Project>{1DF5130C-901D-7B9F-ADDA-BCF37707C6D6}</Project>
       <Name>Unity.2D.Sprite.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj">
+      <Project>{6CBEBCCB-A184-7ED7-29EB-0D30CEEA03A0}</Project>
+      <Name>Unity.AI.Navigation.Editor.ConversionSystem</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
       <Project>{5B780AB2-F999-50F8-4D94-29E6741EB242}</Project>
       <Name>Unity.VisualScripting.Shared.Editor</Name>
@@ -744,13 +757,17 @@
       <Project>{A1F241AF-589C-2B62-A5B1-DEA2ACE9C6AF}</Project>
       <Name>Unity.VisualScripting.Core.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{00A31DFA-B19C-C604-B88E-2BD61F3B32ED}</Project>
-      <Name>UnityEngine.UI</Name>
+    <ProjectReference Include="Unity.AI.Navigation.Updater.csproj">
+      <Project>{97AFFD79-FBCC-C601-B31E-5ACDEEA5A436}</Project>
+      <Name>Unity.AI.Navigation.Updater</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{643356C8-84B3-0BA8-0CC9-A81330A104A7}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{00A31DFA-B19C-C604-B88E-2BD61F3B32ED}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj">
       <Project>{66B94CC0-F77A-BCE8-1CA5-F37F194F7204}</Project>
@@ -796,9 +813,9 @@
       <Project>{9E03D745-07C4-5964-E80C-9E1599A81BDE}</Project>
       <Name>Unity.VisualScripting.State.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj">
-      <Project>{A802488C-4663-2A85-69C4-FD61B17CC56F}</Project>
-      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Model</Name>
+    <ProjectReference Include="Unity.AI.Navigation.Editor.csproj">
+      <Project>{27955645-B8AC-0393-C726-E9C7D531585D}</Project>
+      <Name>Unity.AI.Navigation.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
       <Project>{9621E527-2CE6-521D-7EB2-05C03DB22A3E}</Project>
