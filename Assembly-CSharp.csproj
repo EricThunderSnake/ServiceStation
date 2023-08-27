@@ -67,6 +67,7 @@
     <Compile Include="Assets\DynamicCuboid.cs" />
     <Compile Include="Assets\ParkingManager.cs" />
     <Compile Include="Assets\Cuboid.cs" />
+    <Compile Include="Assets\NPC Test\Scripts\FieldOfView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -373,6 +373,7 @@
 "Assets/DynamicCuboid.cs"
 "Assets/GameManager.cs"
 "Assets/InputManager.cs"
+"Assets/NPC Test/Scripts/FieldOfView.cs"
 "Assets/NPC Test/Scripts/FollowPlayer.cs"
 "Assets/ParkingManager.cs"
 -langversion:9.0

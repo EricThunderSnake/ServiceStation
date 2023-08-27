@@ -18,7 +18,7 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(player.transform);
+        transform.LookAt(new Vector3(player.transform.position.x,transform.position.y, player.transform.position.z));
         agent.destination = player.transform.position - radius * VectorToPlayer();
     }
     
